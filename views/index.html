@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>文件传输系统</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="top">文件传输系统</div>
+    <div class="core-box">
+        <div class="selection-doc" id="fileList">
+            <span class="file-list-title">已选择文件列表:</span>
+            <ol></ol>
+        </div>
+        <div class="multer">
+            <div class="upload-core">
+                <div class="upload-title">点击上传文件</div>
+                <div class="tip">Clik Me</div>
+                <label for="multerFile">
+                    <img src="../images/bg.png" width="300px" height="200px">
+                    <input type="file" name="multerFile" id="multerFile" multiple>
+                </label>
+            </div>
+            <button class="submit">上传</button>
+            <div id="loading"></div>
+        </div>
+    </div>
+    <table id="historyList" width="99%" height="300px" border="2px" style="background:rgba(10,10,10,0.6);border-color: white;margin:10px;padding:0;color:white" cellpadding="10" cellspacing="0" align="center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>文件名称</th>
+                <th>上传时间</th>
+                <th>文件大小</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <input type="button" value="下一页" id="next-page">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/upload-ajax.js"></script>
+    <script src="../js/laoding.js"></script>
+    <script src="../js/pop-up.js"></script>
+    <script src="../js/dateFormat.js"></script>
+    <script src="../js/pagingQuery.js"></script>
+</body>
+
+</html>
