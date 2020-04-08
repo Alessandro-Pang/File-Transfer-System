@@ -24,6 +24,11 @@ npm install --save
 
 *(如果你不需要数据库，只需要将Ajax部分注释掉即可)*
 
+**数据库配置**：
+
+* db文件夹下 ，db.config.js 配置mysql数据库信息
+* ftps.sql 是建表语句
+
 **运行程序**
 
 ```shell
